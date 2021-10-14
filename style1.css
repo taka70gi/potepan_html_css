@@ -1,0 +1,357 @@
+*|*{
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    display: block;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    color: rgb(34, 34, 34);
+    -webkit-locale: "ja";
+}
+div{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+body {
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+p {
+    line-height: 1.5;
+    margin: 0;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+li {
+	list-style-type:none;
+}
+body, div, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+.page_header{
+    width: 100%;
+    position: absolute;
+}
+@media screen and (max-width: 1080px){
+    .page_header {
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 767px){
+    .page_header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+.page_wide {
+    max-width: 100%;
+    margin: 0 36px 0 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .page_wide {
+        margin: 0 20px;
+    }
+}
+.header_logo_pc{
+    width: auto;
+    height: 20px;
+}
+@media screen and (max-width: 767px){
+    .header_logo_pc {
+        display: none;
+    }
+}
+.header_logo_sp{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .header_logo_sp {
+        display: inline-block;
+        width: auto;
+        height: 16px;
+    }
+}
+.headere_list{
+    display: flex;
+}
+.header_layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_list_item{
+    text-align: left;
+    margin-right: 45px;
+}
+.header_list span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.07em;
+}
+.header_list .header_list_item span:first-child {
+    font-family: 'Lato', sans-serif
+}
+.header_list .header_list_item  span:last-child {
+    font-size: 10px;
+}
+.button_wide{
+    width: fit-content;
+}
+.button_size {
+    font-size: 12px;
+    height: 40px;
+    padding: 0 20px;
+}
+.button_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #f79314;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+}
+
+.header-nav-hamburger {
+    display: none;
+}
+@media screen and (max-width: 1080px){
+    .header-nav-hamburger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 21px;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 1080px){
+    .header-nav-hamburger-line {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #222;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .header-nav-hamburger-line:first-child {
+        top: 0;
+    }
+}
+@media screen and (max-width: 1080px){
+    .header-nav-hamburger-line:last-child {
+        top: 100%;
+    }
+}
+@media screen and (max-width: 1080px){
+    .header_layout {
+        display: none;
+    }
+}
+.top_page{
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero.png);
+    background-size: auto 100%;
+    background-position: right 0;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 250px;
+}
+.top_page_wide {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.top_page_left{
+    max-width: 330px;
+    position: relative;
+}
+.top_page_left .img_no_1 {
+    position: absolute;
+    top: 0;
+    left: 350px;
+}
+.top_page_left .img_no_1 > img{
+    width: 154px;
+    height: 154px;
+}
+.top_page_left_logo > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.top_page_left_text {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.7;
+    margin-top: 30px;
+}
+.top_page_left_text > span {
+    color: #f79314;
+}
+.top_page_button{
+    width: 100%;
+    margin-top: 30px;
+}
+.top_page_button_size {
+    font-size: 18px;
+    height: 60px;
+    padding: 0 20px;
+}
+.top_page_kome {
+    color: #000;
+    font-size: 10px;
+    max-width: 500px;
+    margin-top: 100px;
+}
+@media screen and (max-width: 767px){
+    .top_page {
+        padding-top: 258px;
+        padding-bottom: 12px;
+        background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-sp.png);
+    }
+    .top_page_wide {
+        max-width: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .top_page_left {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top_page_left .img_no_1 {
+        top: -125px;
+        left: -56px;
+    }
+    .top_page_left .img_no_1 > img {
+        width: 120px;
+        height: 120px;
+    }
+    .top_page_left_text {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .top_page_button {
+        margin-top: 15px;
+    }
+    .top_page_kome {
+        padding-top: 24px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .top_page_left .img_no_1 {
+        top: -168px;
+        right: 0;
+        left: -28px;
+    }
+    .top_page_kome p {
+        padding: 4px;
+    }
+}
+
+.main_section{
+    background-color: #f79314;
+    padding: 45px 0;
+}
+.main_wide {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.flow_text{
+    color: #fff;
+    font-weight: 700;
+    width: 500px;
+}
+.flow_text > h2 {
+    font-size: 30px;
+}
+.flow_text > h2 > span {
+    font-size: 40px;
+}
+.flow_button {
+    margin-top: 80px;
+}
+.flow_button_layout {
+    color: #f79314;
+    background-color: #fff;
+    width: 300px;
+    padding: 10px 0px;
+    letter-spacing: 0.1em;
+    border-radius: 60px;
+}
+.flow_button_layout span:first-child {
+    letter-spacing: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.flow_button_layout span:last-child {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px){
+    .main_wide {
+        flex-direction: column;
+        max-width: none;
+    }
+    .flow_text {
+        width: auto;
+    }
+}
+@media screen and (max-width: 767px){
+    .main_wide {
+        flex-direction: column;
+        max-width: none;
+        padding: 0 30px;
+    }
+    .flow_text {
+        width: auto;
+    }
+    .flow_text h2 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .flow_text > h2 > span {
+        font-size: 30px;
+    }
+    .flow_button {
+        margin-top: 20px;
+    }
+}
